@@ -1,0 +1,42 @@
+#faux {
+ /*background:  url(../graphics/bkgrnds/bkgrnd.gif);*/
+ margin-bottom: 5px;
+ overflow: auto; /* Paul O Brien fix for IE www.pmob.co.uk */
+ width: 100%
+}
+
+
+
+#leftcol { 
+ display: inline;
+ color: #333;
+/*background: url(../graphics/bkgrnds/linkbar-verticalimage.jpg);*/
+ margin: 10px 6px 10px 10px;
+ padding: 0px;
+/*width in header of each htm file - leftcol+rightcol=936, ie with 40px of margin=976*/
+ float: left;
+    /*border:1px;*/
+    /*border-style:solid;*/
+    /*border-color:#B2B2B2;*/
+}
+
+
+#rightcol { 
+ float: right;
+ color: #333;
+ margin: 10px 10px 10px 0px;
+ padding: 0px;
+ /*width in header of each htm file - leftcol+rightcol=936, ie with 40px of margin=976*/
+ display: inline;
+ position: relative;
+   /* border:1px;*/
+   /* border-style:solid;*/
+   /* border-color:#B2B2B2;*/
+}
+
+/************************************************************************************
+Homepage Hero
+*************************************************************************************/
+  .hero-contents {background-position: 200px 0px; background: url("../graphics/homepage/hero-homepage-967px.jpg") no-repeat center right;  height: 275px;}
+  .hero-contents h1 {color: #333399; font-size: 1.8rem; font-weight: 800; line-height: 2rem; padding-top: 4.5rem; padding-left: 2rem; margin-top: 0px;}
+  .hero-contents p {color: #333399; font-size: 1.2rem; font-weight: 400; line-height: 1.3rem; padding-right: 30rem; padding-left: 2rem;}

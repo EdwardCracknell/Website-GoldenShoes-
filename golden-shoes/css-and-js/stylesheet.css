@@ -1,0 +1,271 @@
+#iefix {   /* div around NAV div, so menu items drop above homepage slideshow and all other content*/
+position:relative;
+z-index:1200;
+}
+
+
+/*in htm file use <div class="gallery"> put image in here </div> */
+.gallery img {
+   padding:1px;
+   border:1px solid #7c7c7c;
+}
+
+.gallery-small img {
+   /*padding:1px;*/
+   border:1px solid #7c7c7c;
+}
+
+.gallery-small{
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: small;
+   color: #333;
+   line-height:99%;
+}
+
+.gallery-title-desc {font-size: 12px; font-weight: 600;}
+
+
+#slideshow1 img {
+ border-left:20px;
+    border-style:solid;
+    border-color:#E7E7E7;
+}
+
+html {     
+       overflow-y: scroll;   /* forces a vertical scrollbar, to prevent centre jumping - works in all except Opera */
+}
+
+body {
+	/*margin:0;*/
+	/*padding:0;*/
+			/* This removes the border around the viewport in old versions of IE */
+	/*width:960px;*/   /* it was 100%, as a fluid design, I have made 980px */
+	/*background: url(../graphics/backgrounds/background-vertical.gif);   commented out as using background colour */
+	background:#ffffff;  /*comment out if using a background image   */
+
+	/*min-width:600px;*/    	/* Minimum width of layout - remove line if not required */
+					/* The min-width property does not work in old versions of Internet Explorer */
+	font-family: Verdana, Arial, Helvetica, sans-serif; 	
+	font-size: 1em;  /*  font size of the body text, unless overwritten by a particular class, was 0.8em */
+	/*font-size:90%;  if want to set font size in %s instead*/	
+	color: #333;  /*   was #62372E  */
+}
+a {
+	color:#3333cc;  
+	text-decoration:none;
+}
+a:hover111 {
+	color:#0241FD;
+	text-decoration:underline;
+	/*background:#369;  gave blue bkgrnd behind every link on every page, even if it was an image link*/
+	
+}
+h1,h2, h3 {
+	margin:.8em 0 .2em 0;
+	padding:0;
+}
+p {
+	margin:.4em 0 .8em 0;
+	padding:0;
+}
+
+/*td, th {
+/*	font-family: Arial, Helvetica, sans-serif;*/
+/*	font-size: 12px;*/
+/*	line-height: 24px;*/
+/*	color: #330000;*/
+/*}
+
+#header p,
+#header h1,
+#header h2 {
+	padding:.4em 15px 0 15px;
+	margin:0;
+	}
+
+
+
+/* ........TEXT CLASS STYLING......... */
+
+
+.picturesizes{
+font-size:  0.7em;
+font-weight: bold;
+line-height:80%;
+/*color:#000; if want this particular text style class to have a colour different to that set under body*/
+}
+
+/* ........ END OF TEXT CLASS STYLING......... */
+
+/* CONTAINER for the background tiling image */
+
+.TextWrapRight {
+float: right;
+/*margin: 10px;*/
+}
+
+.TextWrapc {
+float: left;
+/*margin: 10px;*/
+}
+
+
+#bkgrdimage {
+   /* doesn't look like this is required, as the white background in sidebar seems to be extending to footer, use if necessary */ 
+    }
+
+
+/* COLUMN CONTAINER from vareso */
+
+
+#header {
+   /* by default no CSS is required for header div - by default it is 100% of container, and by default will position itself as far to top and left as it can */
+   }
+
+#container {
+    width:967px;
+    margin:10px auto; /* setting auto on left and right margins, combined with fixed width to container - centres it */
+    /*background: url(../graphics/backgrounds/background-tiling.jpg) repeat-Y;   I HAVE ADDED */	
+    /*border:1px;*/
+    /*border-style:solid;*/
+    /*border-color:#B2B2B2;*/	    
+}
+
+#content {
+    /*float:right; set to float:right for sidebar on left, and float:left for sidebar on right. Required so sidebar div sits next content div  */
+    /*width:710px;  any px, but sum of content and sidebar widths must be less than or = to container div width  */
+    padding:20px 0px 10px 0px;  /* I added */
+    }
+
+/*#sidebar{*/
+   /*  float:left;  like the content it is floated left, it could also be floated right - either is OK  */
+   /* width:207px;   any px, but sum of content and sidebar widths must be less than or = to container div width */
+   /* margin: 0px 15px 0px 0px;  I added this, the first 10 doesn't seem to affect top margin of sidebar, very strange */
+    /*padding: 10px 5px 10px 5px;    */
+    /*background: #F9F5F5;  ONLY NEED THIS IF NOT USING THE TILING BACKGROUND IMAGE IN CONTAINER was  #fff then #F8F4F4 */
+   /* }*/
+
+#footer {
+    clear: both; /* clears the two floated divs to ensure the footer sits below them - we could use clear:left if wanted  */
+}
+    /************************************************************************************
+CSS for text links for LIGHT backgrounds
+*************************************************************************************/
+
+a.list:link
+{
+    color: #255064; /*--was #333 ---*/
+    text-decoration: none;
+    /* bigger text size */
+    /* bigger padding*/
+    padding: 15px 45px 15px 45px;
+    margin-top: 15px;
+    line-height: 80px;
+    font-size: x-large;
+    border: 1px solid #999;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    text-align: center;
+}
+
+a.list:visited {
+    color: #255064;
+    text-decoration: none;
+    padding: 15px 45px 15px 45px;
+    margin-top: 15px;
+    line-height: 80px;
+    font-size: x-large;
+    border: 1px solid #999;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+a.list:hover {
+    /*color: #255064; */
+    color: #fff;
+    text-decoration: none;
+    /*background-color: #d3d3d3; */
+    background-color: #c78e23;
+    padding: 15px 45px 15px 45px;
+    margin-top: 15px;
+    line-height: 80px;
+    font-size: x-large;
+    border: 1px solid #999;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+a.list:active {
+    color: #255064;
+    text-decoration: none;
+    padding: 15px 45px 15px 45px;
+    margin-top: 15px;
+    line-height: 80px;
+    font-size: x-large;
+    border: 1px solid #999;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+/* These are for the submit button */
+
+a.list2:link {
+    color: #255064; /*--was #333 ---*/
+    text-decoration: none;
+    /* bigger text size */
+    /* bigger padding*/
+    padding: 3px 10px 3px 10px;
+    line-height: 38px;
+    border: 1px solid #999;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    text-align: center;
+}
+
+a.list2:visited {
+    color: #255064;
+    text-decoration: none;
+    padding: 3px 10px 3px 10px;
+    line-height: 38px;
+    border: 1px solid #999;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+/*
+a.list2:hover {
+    color: #255064;
+    text-decoration: none;
+    background-color: #d3d3d3;
+    padding: 3px 10px 3px 10px;
+    line-height: 38px;
+    border: 1px solid #999;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}*/
+
+a.list2:active {
+    color: #255064;
+    text-decoration: none;
+    padding: 3px 10px 3px 10px;
+    line-height: 38px;
+    border: 1px solid #999;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+

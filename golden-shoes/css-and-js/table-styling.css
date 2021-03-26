@@ -1,0 +1,51 @@
+table.outer {
+	/*font-family: verdana,arial,sans-serif;*/
+	/*font-size:11px;*/
+	/*color:#999999;*/
+	border-width: 1px;
+	border-color: #888888;
+	border-collapse: collapse;
+	}
+table.outer th {   /*  top header row */
+	background:#9cb283; /* url('../graphics/table-images/cell-blue.jpg');*/
+	border-width: 1px;
+	padding: 6px;
+	border-style: solid;
+	border-color: #888888; /*  was #566556 border around the cells of the top header row 	*/
+	}
+table.outer td {
+	/*background:#dcddc0 url('../graphics/table-images/cell-grey.jpg');*/
+	border-width: 1px;
+	padding: 6px;
+	border-style: solid;
+	border-color: #888888;
+	}
+table.outer tr {
+    border-bottom: 1px solid #bbb; /*  horiz line between rows */
+	}
+
+table.inner {
+	/*font-family: verdana,arial,sans-serif;*/
+	/*font-size:11px;*/
+	/*color:#333333;*/
+	border-width: 0px;
+	border-color: #550014;
+	border-collapse: collapse;
+	}
+table.inner th {   /*  top header row */
+	background:#9cb283; /* url('../graphics/table-images/cell-blue.jpg');*/
+	border-width: 0px;
+	padding: 2px;
+	border-style: solid;
+	border-color: #550014; /*  was #566556 border around the cells of the top header row 	*/
+	}
+table.inner td {
+	/*background:#dcddc0 url('../graphics/table-images/cell-grey.jpg');*/
+	border-width: 0px;
+	padding: 2px;
+	border-style: solid;
+	border-color: #550014;
+	}
+table.inner tr {
+    border-bottom: 0px solid #566556; /*  horiz line between rows */
+	}
